@@ -1,4 +1,4 @@
-# Modelo-Relacional-Viveros
+# Práctica 3: Modelo relacional. Viveros.
 
 ## Miembros
 1. Laura Álvarez Zamora **alu0101349824@ull.edu.es**
