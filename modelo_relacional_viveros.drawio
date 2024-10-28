@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.2">
+  <diagram name="Vivero-Relacional" id="DlgvNUACUfaQvKq9qlf7">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0F2z70YH4uNPyJR6nJny-1" value="Vivero (&lt;u style=&quot;font-size: 12px;&quot;&gt;Código&lt;/u&gt;, Nombre, Latitud, Longitud, Productividad)" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0F2z70YH4uNPyJR6nJny-2" value="Zona (&lt;u style=&quot;font-size: 12px;&quot;&gt;Código&lt;/u&gt;, Nombre, Latitud, Longitud, Productividad, &lt;u style=&quot;font-size: 12px;&quot;&gt;Código_Vivero&lt;/u&gt;)&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;Código_Vivero: FOREIGN KEY de Empleado (Código)&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="431" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0F2z70YH4uNPyJR6nJny-5" value="Historial (&lt;u style=&quot;font-size: 12px;&quot;&gt;ID_Historial&lt;/u&gt;, Fecha, DNI_Empleado, Código_Zona, Código_Vivero)&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;DNI_Empleado: FOREIGN KEY de Empleado (DNI)&lt;/li&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;Código_Zona: FOREIGN KEY de Zona (Código)&lt;/li&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;Código_Vivero: FOREIGN KEY de Empleado (Código)&lt;/li&gt;&lt;/ul&gt;" style="text;whiteSpace=wrap;html=1;align=left;verticalAlign=top;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="661" width="440" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0F2z70YH4uNPyJR6nJny-9" value="Producto (&lt;u style=&quot;font-size: 12px;&quot;&gt;Código&lt;/u&gt;, Stock, Precio, Disponibilidad, Costo_Produccion)" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="481" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0F2z70YH4uNPyJR6nJny-14" value="Pedidos (&lt;u style=&quot;font-size: 12px;&quot;&gt;Código&lt;/u&gt;, Importe, Fecha,&amp;nbsp;DNI_Empleado,&amp;nbsp;DNI_ClienteFidelizado)&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;DNI_Empleado: FOREIGN KEY de Empleado (DNI)&lt;/li&gt;&lt;li&gt;DNI_ClienteFidelizado: FOREIGN KEY de Cliente_Fidelizado&amp;nbsp;(DNI)&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="591" width="440" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iTkprR3oAFIrBwnCaC1_-1" value="Empleado (&lt;u style=&quot;font-size: 12px;&quot;&gt;DNI&lt;/u&gt;, Nombre, Productividad,&amp;nbsp;&lt;span style=&quot;font-size: 12px;&quot;&gt;Código_Zona&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Época_Año&lt;/span&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;)&lt;/font&gt;&lt;div style=&quot;line-height: 100%; font-size: 12px;&quot;&gt;&lt;ul style=&quot;line-height: 100%; font-size: 12px;&quot;&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Código_Zona: FOREIGN KEY de Empleado (Código)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="511" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GdEsjP5zeC3vfZgBRAmK-1" value="Cliente_Fidelizado (&lt;u style=&quot;font-size: 12px;&quot;&gt;DNI&lt;/u&gt;, Nombre, Bonificaciones)" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="561" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3ZJMpc_EE0C4nRCl-aHU-3" value="Zona_Producto (&lt;u style=&quot;font-size: 12px;&quot;&gt;Código_Producto&lt;/u&gt;, &lt;u&gt;Código_Zona&lt;/u&gt;)&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;Código_Producto: FOREIGN KEY de Producto (Código)&lt;/li&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;Código_Zona: FOREIGN KEY de Zona (Código)&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="741" width="440" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3ZJMpc_EE0C4nRCl-aHU-5" value="Producto_Pedido (&lt;u style=&quot;font-size: 12px;&quot;&gt;Código_Producto&lt;/u&gt;,&amp;nbsp;&lt;u style=&quot;font-size: 12px;&quot;&gt;Código_Pedido&lt;/u&gt;, Cantidad)&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;Código_Producto: FOREIGN KEY de Producto (Código)&lt;/li&gt;&lt;li style=&quot;font-size: 12px;&quot;&gt;Código_Pedido: FOREIGN KEY de Pedido (Código)&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;strokeColor=#B3B3B3;spacingLeft=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="811" width="440" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
